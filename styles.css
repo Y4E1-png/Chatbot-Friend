@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff9f9;
+  margin: 0;
+  
+  h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+
+.container {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to bottom,
+    #c8102e 0%,
+    #e89ca8 45%,
+    #eab8bf 60%,
+    #eccccf 72%,
+    #ece2e3 82%,
+    #edeaeb 90%,
+    #ededed 96%,
+    #ededed 100% 
+  );
+  background-size: 100% 40dvh;
+  background-repeat: no-repeat;
+  background-color: #ededed;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  padding: 60px;
+  align-items: center;
+  color: #ffffff;
+  
+
+  button {
+    justify-self: end;
+    transform: translateY(-10px);
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.4s ease;
+
+
+    &:hover {
+      background-color: #e2001741;
+      transform: translateY(-10px) rotate(-85deg);
+      transition: transform 0.5s ease;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 25px 20px;
+    grid-template-columns: 1fr auto;
+  }
+}
+
+.header__logo--imagen {
+  height: 50px;
+}
+
+.header__nombre {
+  text-align: center;
+}
+
+.header__titulo {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  color: #ffffff;
+  font-family: "Squada One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  @media (max-width: 600px) {
+    font-size: 25px;
+  }
+
+}
+
+.header__brand {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transform: translateY(-10px);
+
+  @media (max-width: 600px) {
+    grid-column: 1;
+    justify-self: flex-start;
+    gap: 8px;
+  }
+}
+
+.messages-section {
+  flex: 1;
+  min-height: 0;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.messages-section__content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.message {
+  padding: 15px;
+  border-radius: 20px;
+  margin: 0;
+  max-width: 43%;
+  overflow-wrap: anywhere;
+}
+
+.message--user {
+  background-color: #c8102e;
+  color: #dddddd;
+  align-self: flex-end;
+}
+
+.message--bot {
+  background-color: #ebbdc3;
+  align-self: flex-start;
+}
+
+footer {
+  display: flex;
+  background-color: #ededed;
+  padding: 40px;
+
+  form {
+    display: flex;
+    width: 100%;
+    position: relative;
+
+    input {
+      flex: 1;
+      min-width: 0;
+      height: 70px;
+      width: 100%;
+      padding-right: 110px;
+      padding-left: 20px;
+      background-color: #dddddd;
+      border-radius: 50px;
+      border: none;
+      font-family: inherit;
+      font-size: 16px;
+    }
+
+    button {
+      border-radius: 20px;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 80px;
+      height: 44px;
+      background-color: #c8102e;
+      border: none;
+      transition: background-color 0.15s ease, transform 0.4s ease;
+      
+      &:hover {
+        background-color: #8b0015;
+        transform: translateY(-24px);
+        transition: transform 0.4s ease;
+      }
+    }
+  }
+}
+

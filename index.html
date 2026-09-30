@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Libre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <header class="header">
+      <div class="header__brand">
+        <div class="header__logo">
+          <img class="header__logo--imagen" src="assets/logo-chatbot.png" alt="Logo Chatbot">
+        </div>
+
+        <div class="header__nombre">
+          <h1 class="header__titulo">CHATBOT FRIEND</h1>
+        </div>
+      </div>
+
+      <button id="refresh-button" class="header__refresh-button" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+          <path 
+            d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <article class="messages-section">
+      <div id="message-section" class="messages-section__content">
+
+      </div>
+    </article>
+
+    <footer class="footer">
+      <form class="footer__form" id="footer-form">
+        <input id="introduce-texto" aria-label="Introduce texto" class="footer__form-input" type="text" placeholder="Escribe algo">
+        <button id="boton-enviar" class="footer__form-button" type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+            <path 
+              d="M760-200v-160q0-50-35-85t-85-35H273l144 144-57 56-240-240 240-240 57 56-144 144h367q83 0 141.5 58.5T840-360v160h-80Z"
+            />
+          </svg>
+        </button>
+      </form>
+    </footer>
+
+  </div>
+  <script src="functions.js"></script>
+</body>
+
+
+</html>
