@@ -102,10 +102,6 @@ Chatbot-Friend/
 - **`functions.js`:** message submission, predefined responses, delayed replies, and conversation clearing.
 - **`assets/`:** chatbot logo.
 
-## Screenshots
-
-<!-- Add a screenshot showing a conversation between the user and the bot here. -->
-
 ## Author
 
 Developed by **Yael Aguilar** as part of the Front-End Development program at EBAC.
